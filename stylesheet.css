@@ -3,21 +3,25 @@
 	padding: 0px;
 }
 
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .grid-container {
 	display: flex;
+	flex-direction: column;
 }
 
 .grid-row {
-	flex-direction: column;
 	display: flex;
+	flex-direction: row;
 }
 
 .grid-cell {
 	border: 1px solid black;
-	width: 5px;
-	height: 5px;
-}
-
-.grid-cell:hover {
-	background-color: aqua;
+	width: 40px;
+	height: 40px;
 }
