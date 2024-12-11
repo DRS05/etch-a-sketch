@@ -1,0 +1,23 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.grid-container {
+	display: flex;
+}
+
+.grid-row {
+	flex-direction: column;
+	display: flex;
+}
+
+.grid-cell {
+	border: 1px solid black;
+	width: 5px;
+	height: 5px;
+}
+
+.grid-cell:hover {
+	background-color: aqua;
+}
