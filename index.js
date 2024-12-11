@@ -1,8 +1,7 @@
 cell = document.createElement("div");
 number_of_squares = 16;
 
-grid = document.createElement("div");
-grid.setAttribute("class", "grid-container");
+grid = document.querySelector(".grid-container")
 
 for (let i = 0; i < 16; i++) {
 	row = document.createElement("div");
@@ -18,3 +17,7 @@ for (let i = 0; i < 16; i++) {
 }
 
 document.body.appendChild(grid);
+
+grid.addEventListener("mouseover", event => {
+	event.target.style.backgroundColor = "blue";1
+})
